@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aqua;
+            margin: 50px;
+        }
+        img{
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(red, green, blue, alpha);
+            transition: transform 0.5s ease-in-out;
+        }
+        .float:hover {
+            transform: translate(-25px);
+        }
+        .flip:hover {
+            transform: rotateY(180deg);
+        }
+        .blur  {
+            filter: blur(5px);
+        }
+        .blur:hover {
+            filter: blur(10px);
+        }
+        .pulse {
+            animation: pulse 0.1s infinite alternate;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(1.1); opacity: 0.8; 
+        }
+        }
+        .shake:hover{
+            animation:shake 0.3s infinite;
+        }
+        @keyframes shake{
+            0%,100%{transform:translate(0);}
+            25%{transform:translateX(-5px);}
+            50%{transform:translateX(5px);}
+            75%{transform:translateX(-5px);}
+        }
+        .spin:hover{
+            transform:rotate(360deg);
+        }
+        .skew:hover {
+            transform: skew(180deg);
+        }
+
+
+    </style>
+    
+</head>
+
+<body>
+    <h1>Awesome Image Effects</h1>
+    <div class="container">
+        <div>
+            <h2>1. floating Effect</h2>
+            <img src="https://th.bing.com/th/id/OIP.NZzmdImCU2b9pQomly_AYAHaJf?rs=1&pid=ImgDetMain" alt="floating  Image" class="float">
+        </div>
+        <div>
+            <h2>2. flip Effect</h2>
+            <img src="https://th.bing.com/th/id/OIP.NZzmdImCU2b9pQomly_AYAHaJf?rs=1&pid=ImgDetMain" alt="flip Image" class="flip">
+
+        </div>
+        <div>
+            <h2>3. blur to focus Effect</h2>
+            <img src="https://th.bing.com/th/id/OIP.NZzmdImCU2b9pQomly_AYAHaJf?rs=1&pid=ImgDetMain" alt="blur Image" class="blur">
+
+
+        </div>
+        <div>
+            <h2>4. pulse Effect</h2>
+            <img src="https://th.bing.com/th/id/OIP.NZzmdImCU2b9pQomly_AYAHaJf?rs=1&pid=ImgDetMain" alt="pulse Image" class="pulse">
+
+
+        </div>
+        <div>
+            <h2>5. shake Effect</h2>
+            <img src="https://th.bing.com/th/id/OIP.NZzmdImCU2b9pQomly_AYAHaJf?rs=1&pid=ImgDetMain" alt="Shake  Image" class="shake">
+
+        </div>
+        <div>
+            <h2>6. spin Effect</h2>
+            <img src="https://th.bing.com/th/id/OIP.NZzmdImCU2b9pQomly_AYAHaJf?rs=1&pid=ImgDetMain" alt="spin Image" class="spin">
+
+        </div>
+        <div>
+            <h2>7. skew Effect</h2>
+            <img src="https://th.bing.com/th/id/OIP.NZzmdImCU2b9pQomly_AYAHaJf?rs=1&pid=ImgDetMain" alt="skew Image" class="skew">
+
+        </div>
+    </div>
+</body>
+</html>
